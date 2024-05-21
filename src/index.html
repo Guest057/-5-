@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="topnav">
+        <div class="search-container">
+            <form name="submitCountry" id="submitCountry" onsubmit="toggleVisibility()">
+                <input type="text" placeholder="Enter a country" id="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <div class="mapContainer"> 
+        <div class="countryLocation"></div>   
+        <div id="map"></div>
+    </div>
+    <div id="hidden">
+        <div hidden class="capitalLatLong"></div>
+        <div class="countryName"></div>
+        <div class="capitalCity"></div>
+        <div class="population"></div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
