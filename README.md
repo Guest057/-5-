@@ -1,2 +1,5 @@
-Laboratorna robota nomer 5 | PIS |
-Vikonav Koval Yaroslav IS-23
+# Лабораторна робота №5 | ПІС
+
+## Виконав Коваль Ярослав ІС-23
+
+
