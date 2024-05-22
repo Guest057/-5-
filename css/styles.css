@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #ffffff;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #479c63;
+    height: 50px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.topnav .search-container {
+    float: right;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #a6bca2;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+    background: #5a5f66;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav .search-container {
+        float: none;
+    }
+
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .topnav input[type=text] {
+        border: 1px solid #ccc;  
+    }
+}
+
+.hidden {
+    margin: 30px 30px 30px 30px;
+    background-color: gray;
+    border-radius: 10px;
+    justify-content:  flex;
+    display: none;
+}
+
+.countryName, .population, .languages, .capitalCity {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+.timeInfo, .weatherHeader, .temperature, .weatherDescriptionSky, 
+.weatherDescriptionHumidity, .weatherDescriptionWind {
+    text-align: center;
+}
+
+.timeInfo {
+    margin-bottom: 30px;
+}
+.weatherTop {
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.location {
+    width: 350px;
+    height: 200px;
+    margin: 10px auto 0px auto;
+    display: block;
+}
+
+.flag {
+    width: 275px;
+    height: 150px;
+    margin: 10px auto 0px auto;
+    display: block;
+}
+
+.flagText {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top: 2px;
+}
+
+.weatherIcon {  
+    width: 66px;
+    height: 60px;
+}
+
+.countryLocation {
+    text-align: center;
+    margin: 20px auto 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#map {
+    margin: 10px auto 30px auto;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+}
